@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ti+fU5WbmjQ=",
+  "dgSpecHash": "pofajHmkGe0=",
   "success": true,
   "projectFilePath": "/home/milanpraz/dotnet_lab2/WebApp2ByMilanPrajapati/WebApp2ByMilanPrajapati.csproj",
   "expectedPackageFiles": [
-    "/home/milanpraz/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+    "/home/milanpraz/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "/home/milanpraz/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.14/microsoft.netcore.app.host.linux-x64.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }
