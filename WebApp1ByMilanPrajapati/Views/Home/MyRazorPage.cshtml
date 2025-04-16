@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "My Razor Page";
+    int rollNo = 26; // Replace with your actual roll number
+    int num = rollNo + 1;
+}
+
+<h2>@ViewData["Title"]</h2>
+<p><strong>Name:</strong> Milan Prajapati</p>
+<p><strong>Roll No:</strong> @rollNo</p>
+<p><strong>Date & Time:</strong> @DateTime.Now</p>
+
+<h3>Multiplication Table of @num</h3>
+<ul>
+    @for (int i = 1; i <= 10; i++)
+    {
+        <li>@num x @i = @(num * i)</li>
+    }
+</ul>
