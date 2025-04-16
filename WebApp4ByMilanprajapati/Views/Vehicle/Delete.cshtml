@@ -1,0 +1,25 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>Delete Student</h2>
+
+<p>Are you sure you want to delete the following student?</p>
+
+<div>
+    <strong>Name:</strong> John Doe
+</div>
+<div>
+    <strong>Age:</strong> 20
+</div>
+<div>
+    <strong>Faculty:</strong> Computer Science
+</div>
+
+<form method="post">
+    <button type="submit">Delete</button>
+    <a href="@Url.Action("Index", "Student")">Cancel</a>
+</form>
+
+<hr />
+<p><strong>Milan Prajapati - Roll No: 28057</strong></p>

@@ -1,0 +1,32 @@
+@{
+    var vehicle = (dynamic)Model;
+}
+
+<h2>Edit Vehicle</h2>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@vehicle.Id" />
+    <div>
+        <label for="RegistrationNumber">Registration Number</label>
+        <input type="text" id="RegistrationNumber" name="RegistrationNumber" value="@vehicle.RegistrationNumber" required />
+    </div>
+    <div>
+        <label for="Make">Make</label>
+        <input type="text" id="Make" name="Make" value="@vehicle.Make" required />
+    </div>
+    <div>
+        <label for="Model">Model</label>
+        <input type="text" id="Model" name="Model" value="@vehicle.Model" required />
+    </div>
+    <div>
+        <label for="Year">Year</label>
+        <input type="number" id="Year" name="Year" value="@vehicle.Year" required />
+    </div>
+    <div>
+        <label for="OwnerName">Owner Name</label>
+        <input type="text" id="OwnerName" name="OwnerName" value="@vehicle.OwnerName" required />
+    </div>
+    <button type="submit">Save</button>
+</form>
+
+<p><strong>Milan Prajapati - Rollno: 28057</strong></p>

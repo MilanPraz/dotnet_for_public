@@ -1,0 +1,25 @@
+@{
+    var vehicle = (dynamic)Model;
+}
+
+<h2>Vehicle Details</h2>
+
+<div>
+    <strong>Registration Number:</strong> @vehicle.RegistrationNumber
+</div>
+<div>
+    <strong>Make:</strong> @vehicle.Make
+</div>
+<div>
+    <strong>Model:</strong> @vehicle.Model
+</div>
+<div>
+    <strong>Year:</strong> @vehicle.Year
+</div>
+<div>
+    <strong>Owner Name:</strong> @vehicle.OwnerName
+</div>
+
+<p><strong>Milan Prajapati - Rollno: 28057</strong></p>
+
+<a href="@Url.Action("Index", "Vehicle")">Back to List</a>

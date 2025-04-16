@@ -1,0 +1,52 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>Student List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Faculty</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>Computer Science</td>
+            <td>
+                <a href="@Url.Action("Edit", "Student", new { id = 1 })">Edit</a> |
+                <a href="@Url.Action("Delete", "Student", new { id = 1 })">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>22</td>
+            <td>Mathematics</td>
+            <td>
+                <a href="@Url.Action("Edit", "Student", new { id = 2 })">Edit</a> |
+                <a href="@Url.Action("Delete", "Student", new { id = 2 })">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Sam Wilson</td>
+            <td>21</td>
+            <td>Physics</td>
+            <td>
+                <a href="@Url.Action("Edit", "Student", new { id = 3 })">Edit</a> |
+                <a href="@Url.Action("Delete", "Student", new { id = 3 })">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    <a href="@Url.Action("Create", "Student")">Create New Student</a>
+</p>
+
+<hr />
+<p><strong>Milan Prajapati - Roll No: 28057</strong></p>

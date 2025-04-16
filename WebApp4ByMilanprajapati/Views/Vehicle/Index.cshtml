@@ -1,0 +1,37 @@
+@{
+    var vehicles = (List<dynamic>)Model;
+}
+
+<h2>Vehicle List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Registration Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Owner Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in vehicles)
+        {
+            <tr>
+                <td>@vehicle.RegistrationNumber</td>
+                <td>@vehicle.Make</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.OwnerName</td>
+                <td>
+                    <a href="@Url.Action("Details", "Vehicle", new { id = vehicle.Id })">Details</a> |
+                    <a href="@Url.Action("Edit", "Vehicle", new { id = vehicle.Id })">Edit</a> |
+                    <a href="@Url.Action("Delete", "Vehicle", new { id = vehicle.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create", "Vehicle")">Create New Vehicle</a>
+
+<p><strong>Milan Prajapati - Rollno: 28057</strong></p>
